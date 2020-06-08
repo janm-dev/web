@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+	<head>
+		<title>Minecraft - janm.ml</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+		<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="Description" content="janm.ml Minecraft server info page.">
+	</head>
+	<body>
+		<header>
+			<a href="/" class="logo">janm.ml</a>
+			<nav>
+				<a href="/l" class="nav bigscreen">SlashL</a>
+				<a href="#info" class="nav">Info</a>
+				<a href="#status" class="nav bigscreen">Status</a>
+				<a href="#rules" class="nav">Rules</a>
+				<a href="#mods" class="nav bigscreen">Mods</a>
+				<a href="#contact" class="nav bigscreen">Contact</a>
+				<a href="#registration" class="nav bigscreen">Registration</a>
+				<input type="checkbox" id="themeswitcher_checkbox" name="themeswitcher">
+				<label for="themeswitcher_checkbox">
+					<svg class="themeswitcher" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g class="a"><path d="M13.333,19.833a.836.836,0,0,0,.833.833H17.5a.836.836,0,0,0,.833-.833V19h-5ZM15.833,4A5.831,5.831,0,0,0,12.5,14.617V16.5a.836.836,0,0,0,.833.833h5a.836.836,0,0,0,.833-.833V14.617A5.831,5.831,0,0,0,15.833,4Zm2.379,9.25-.713.5v1.921H14.167V13.75l-.712-.5a4.17,4.17,0,1,1,4.758,0Z" transform="translate(-5.833 -2.333)"/></g></svg>
+				</label>
+				<script>let checkbox=document.querySelector("input[name=themeswitcher]");checkbox.addEventListener("change",function(){if(this.checked){document.documentElement.setAttribute("data-theme","light");}else{document.documentElement.setAttribute("data-theme","dark");}})</script>
+			</nav>
+		</header>
+		<main>
+			<h2>The janm.ml Minecraft Server</h2>
+			<img id="server-promo-img" src="assets/minecraftserver/minecraftserver-small.jpg" alt="A nice picture of Minecraft.">
+			<script>window.addEventListener("load",function(){document.getElementById("server-promo-img").src="assets/minecraftserver/minecraftserver.png";setInterval(changeImg,4000);setInterval(updateStatus,30000);updateStatus();});</script>
+			<script>let img=document.getElementById("server-promo-img");function changeImg(){img.src=("assets/minecraftserver/"+Math.floor(Math.random()*8)+".jpg");}</script>
+
+			<h1 id="info">Info</h1>
+			<p>The janm.ml Minecraft Server is a vanilla-like survival 1.15.2 Minecraft server running on Spigot with only some minor modifications.</p>
+			<p>It will be updated to every new Minecraft version, once every piece of software the server uses has been updated and it was tested on the most recent backup of the server world to not break anything (changes in game mechanics notwithstanding).</p>
+			<p>The server will also be backed up often as well as sometimes go down for maintenance. During this time you will not be able to play. You can check the status of the server and see if there is a maintenance window planned or if something went wrong <a href="#status" class="link">below</a>. Don't worry, if there is a problem, I probably already know about it and am either working on it, or not available. Spamming messages will only slow down server maintenance work.</p>
+			<p>The server is not open to everyone (it uses the normal whitelist system), but you can get on that whitelist and start playing on the server by registering <a href="#registration" class="link">below</a>.</p>
+			<h3>Other random info:</h3>
+			<p>The seed for the server world is -3122104141486301182.<br>
+			That seed was chosen out of 10 candidates, wich were randomly picked in-game.<br>
+			The difficulty is locked at "hard".<br>
+			Those images above were not taken on the server.<br>
+			This server uses a mix of custom plugins and <a href="https://vanillatweaks.net/" class="link">VanillaTweaks</a>.</p>
+
+			<h1 id="status">Server Status</h1>
+			<p>Here you can check the status of the server and see if there is any maintenance planned.</p>
+			<div id="status-div">
+				<h3 id="status-header">Status:</h3>
+				<h3 id="status-status">Checking status...</h3>
+				<p id="status-players">Checking players...</p>
+				<p id="status-mspt">Checking server speed...</p>
+				<p class="fineprint" id="status-maintenance-text">next planned maintenance:</p>
+				<p class="fineprint" id="status-maintenance-datetime">Checking our calender...</p>
+			</div>
+			<script>function updateStatus(){let textColor="var(--textColor)";let status=document.getElementById("status-status");let players=document.getElementById("status-players");let mspt=document.getElementById("status-mspt");let maintDatetime=document.getElementById("status-maintenance-datetime");fetch("https://api.janm.ml/minecraft/status.json").then(response=>{return response.json();}).then(data=>{status.textContent=data.status;players.textContent=data.players;status.style.color=data.statusColor;players.style.color=textColor;mspt.textContent=data.mspt;mspt.style.color=textColor;maintDatetime.textContent=data.maintenance;maintDatetime.style.color=textColor;}).catch(err=>{status.textContent="Error";status.style.color="#FF0000";})}</script>
+
+			<h1 id="rules">Server Rules</h1>
+			<h3>Definitions:</h3>
+			<p>-&nbsp;"The Admins" are the people running the server. They make and enforce the rules.</p>
+			<p>-&nbsp;The "Spawn Area" is the area within a few hundred blocks of the center of the world (coordinates&nbsp;0,&nbsp;0).</p>
+			<p>-&nbsp;The "Players" are the players playing on the server.</p>
+			<p>-&nbsp;A "building" is any building, house, structure or similar, built or in any other way made or modified by players.</p>
+			<h3>Rules:</h3>
+			<p>1.&nbsp;The server is strictly survival, so you will not be getting anything for free.</p>
+			<p>2.&nbsp;There can be absolutely no griefing.<br>
+			<p>3.&nbsp;There can be absolutely no stealing or destroying of other peoples items.<br>
+			<p>4.&nbsp;PVP fighting is discouraged.<br>
+				a)&nbsp;Attacking players maliciously is considered a violation of this rule.<br>
+				b)&nbsp;If you are getting attacked and/or killed by a player many times, and they are not stopping after you ask them in the in-game chat, please <a class="link" href="#contact">report them</a> (with proof of them attacking/killing you multiple times, as well as you asking them to stop).</p>
+			<p>5.&nbsp;Cheating, hacking, duplicating items or blocks, etc. is not allowed.<br>
+				a)&nbsp;Intended game mechanics (like flying with an elytra or making infinite stone/cobblestone with a stone/cobblestone generator) are completely exempt of this rule and 100% allowed.<br>
+				b)&nbsp;Any items or blocks gained illegitimately must be surrendered to the admins for destruction.<br>
+				c)&nbsp;Destroying blocks (like bedrock) using questionable game mechanics is allowed.<br>
+				d)&nbsp;Duplicating ignited TNT (not in item form) is allowed.<br>
+				e)&nbsp;"0-Tick" farms are exempt of this rule as well, unless they cause too much lag.<br>
+				f)&nbsp;Some farms might be considered too cheaty. These are not allowed on the server, and making and/or using them will be considered a violation of this rule. Here is a full list of these farms:</p>
+				<ul>
+					<li>AFK fishing farms</li>
+				</ul>
+				<br>
+			<p>6.&nbsp;Buildings causing significant lag are not allowed.</p>
+			<p>7.&nbsp;Ugly buildings are not allowed. Make things you build look nice.<br>
+				a)&nbsp;This rule does not apply to far away locations. (Buildings that are far away from any other buildings AND far away from the spawn area.)<br>
+				b)&nbsp;This also applies to leaving tree-halves floating in the air. Please chop trees down fully.</p>
+			<p>8&nbsp; Only mods on the <a class="link" href="#mods">"Allowed Mods"</a> list are allowed.<br>
+				a)&nbsp;If you want to request a mod to be added to the list of allowed mods, please <a class="link" href="#contact">contact us</a>.</p>
+			<p>9.&nbsp;If you brake these rules, you may be banned for some time or indefinitely.</p>
+			<p>10.&nbsp;These rules may be changed by the admins at any time. You always have to follow the most up-to-date set of rules.<br>
+				a)&nbsp;Notice of change of the rules will be provided in the form of the date of the last change of those rules, located in subsection "b" of this rule.<br>
+				b)&nbsp;These rules were last changed on: 2020-02-11.</p>
+
+			<h1 id="mods">Allowed Mods</h1>
+			<p>All client-only mods, that have no impact on gameplay mechanics and don't give you any major competative advantage.</p>
+			<p>Note: By no means is having mods necessary or even encouraged to play on the janm.ml Minecraft server, this list is only meant to be a reference for players, who would like to use a certain mod, and aren't sure if it's OK to do so.</p>
+			<h3>Full list of definitely permitted mods:</h3>
+			<ul>
+				<li>Optifine</li>
+				<li>Replay Mod</li>
+				<li>Apple Skin</li>
+				<li>WAILA (and similar)</li>
+			</ul>
+			<p>If you would like a mod be added to this list (or ask if it's ok to use a certain mod on the server), please <a href="#contact" class="link">contact us</a>.</p>
+			<h3>Full list of definitely NOT permitted mods:</h3>
+			<ul>
+				<li>Any sort of mini-map mod</li>
+				<li>Any mod, that must be installed on the server to work</li>
+				<li>Any mod intended to specifically give you a major gameplay advantage (aimbots, x-ray, godmode,&nbsp;...)</li>
+			</ul>
+			<p>If you would like a mod be added to this list (or ask if it's ok to use a certain mod on the server), please <a href="#contact" class="link">contact us</a>.</p>
+
+			<h1 id="contact">Admin Contact</h1>
+			<p>You can contact us via email at <a href="mailto:contact@janm.ml" class="link">admin@janm.ml</a>, or on our <a href="/discord" class="link">Discord server</a>.</p>
+			<p>More info on <a href="/contact" class="link">our contact page</a>.</p>
+
+			<h1 id="registration">Server Registration</h1>
+			<p>You can register by <a href="#contact" class="link">contacting us</a>.</p>
+			<p>Please include your Minecraft username, and some information about what you plan on doing on the server (Are you going to play with others a lot, or mostly alone? What do you want to build? Are you going to follow the rules? Are you going to be mostly exploring, farming, trading, building,&nbsp;...?).</p>
+		</main>
+		<footer>
+			<a href="/contact" class="link fineprint">contact me</a>
+			<p class="fineprint">&copy; Jan Markiewicz 2019-2020</p>
+		</footer>
+	</body>
+</html>

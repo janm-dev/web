@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Allow: /l
+Allow: /minecraft
+Allow: /contact
+Disallow: /l/*

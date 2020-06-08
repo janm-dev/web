@@ -1,0 +1,347 @@
+$janmColor: #00E699;
+$slashLColor: #EEFF00;
+$contactColor: #D44F4F;
+$linkColor: #00AAFF;
+$minecraftColor: #7DAB5D;
+$lightColor: #EEEEEE;
+$darkColor: #252525;
+$lightDividerColor: #e1e1e1;
+$darkDividerColor: #323232;
+$white: #FFFFFF;
+$black: #000000;
+$underthepebbleColor: #999999;
+$font-default: "Montserrat", sans-serif;
+
+html {
+	margin: 0;
+	padding: 0;
+	font-size: 4vw;
+	--textColor: #{$white};
+	--dividerColor: #{$darkDividerColor};
+	--background: #{$darkColor};
+	color: $white;
+}
+
+html[data-theme="light"] {
+	--textColor: #{$black};
+	--dividerColor: #{$lightDividerColor};
+	--background: #{$lightColor};
+	color: #{$black};
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: $font-default;
+	font-weight: 400;
+	background-color: var(--background);
+	max-width: 100%;
+	max-height: 100%;
+}
+
+main {
+	margin: auto;
+	padding: 0 2rem 0 2rem;
+	max-width: 600px;
+}
+
+p {
+	font-size: 1rem;
+	margin: 0.5rem 0 0.5rem 0;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 2rem;
+	text-align: center;
+	margin: 1.5rem 0 1.5rem 0;
+}
+
+h2 {
+	font-weight: 600;
+	font-size: 2rem;
+	margin: 1rem 0 1rem 0;
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 1.5rem;
+	margin: 1.5rem 0 0.5rem 0;
+}
+
+header {
+	margin: 1rem;
+	padding: 0 0 1rem 0;
+	border-bottom-color: var(--dividerColor);
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+
+	nav {
+		margin: 0;
+		padding: 0.4rem 0 0 0;
+		width: 100%;
+		text-align: right;
+		white-space: nowrap;
+	
+		.nav {
+			color: var(--textColor);
+			font-size: 1rem;
+			padding: 0;
+			margin: 0 0.75rem;
+			text-decoration: none;
+		}
+	
+		svg {
+			height: 1rem;
+			width: 1rem;
+			margin: 0 0 -0.1rem 0.5rem;
+			fill: var(--textColor);
+			cursor: pointer;
+		}
+	
+		.here {
+			text-decoration: underline;
+		}
+	}
+}
+
+footer {
+	text-align: center;
+	margin: 2rem 1rem 1rem 1rem;
+	border-top-color: var(--dividerColor);
+	border-top-width: 1px;
+	border-top-style: solid;
+}
+
+ul {
+	list-style-position: inside;
+
+	li {
+		font-size: 1rem;
+	}
+}
+
+form {
+	border-radius: 1rem;
+	border-width: 0.25rem;
+	border-style: solid;
+	border-color: $janmColor;
+	width: 100%;
+	height: auto;
+
+	h3 {
+		margin: 1rem;
+	}
+
+	.formbutton {
+		height: 2rem;
+		width: 12rem;
+		margin: 1rem auto;
+		padding: 0;
+		font-size: 1rem;
+		font-weight: 600;
+		font-family: $font-default;
+		text-decoration: none;
+		border-radius: 1rem;
+		border-width: 0.25rem;
+		border-style: solid;
+		background-color: $janmColor;
+		border-color: $janmColor;
+		color: $black;
+	}
+
+	.formbutton:hover {
+		cursor: pointer;
+	}
+
+	.formtext {
+		height: 1rem;
+		width: 80%;
+		margin: 0 1rem;
+		padding: 0.5rem;
+		font-size: 1rem;
+		font-family: $font-default;
+		text-decoration: none;
+		border-radius: 1rem;
+		border-width: 0.1rem;
+		border-style: solid;
+		background-color: var(--background);
+		border-color: $janmColor;
+		color: var(--textColor);
+	}
+
+	.formtextarea {
+		height: 5rem;
+		width: 80%;
+		margin: 0 1rem;
+		padding: 0.5rem;
+		font-size: 1rem;
+		font-family: $font-default;
+		text-decoration: none;
+		border-radius: 1rem;
+		border-width: 0.1rem;
+		border-style: solid;
+		background-color: var(--background);
+		border-color: $janmColor;
+		color: var(--textColor);
+		resize: none;
+	}
+
+	.formtext:focus, .formbutton:focus, .formtextarea:focus {
+		outline: none;
+	}
+
+	.formlabel {
+		padding: 0 1rem;
+		margin: 1rem 1rem 0.2rem 1rem;
+		text-align: center;
+	}
+
+	.center {
+		text-align: center;
+	}
+}
+
+#themeswitcher_checkbox {
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+#server-promo-img {
+	width: 100%;
+	height: auto;
+}
+
+.logo {
+	margin: 0;
+	padding: 0 2rem 0.2rem 0;
+	font-family: "Expletus Sans", sans-serif;
+	font-size: 1.5rem;
+	text-transform: lowercase;
+	font-weight: 700;
+	text-decoration: none;
+	color: $janmColor;
+	float: left;
+}
+
+.link {
+	color: $linkColor;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+#status-div {
+	width: 100%;
+	height: auto;
+	background-color: var(--background);
+	color: var(--textColor);
+	border-radius: 1rem;
+	border-width: 0.25rem;
+	border-style: solid;
+	border-color: $janmColor;
+
+	h3, p {
+		padding: 0;
+		margin: 0.5rem 1rem;
+	}
+
+	#status-maintenance-text {
+		margin: 0.5rem 1rem 0 1rem;
+	}
+
+	#status-maintenance-datetime {
+		margin: 0 1rem 0.5rem 1rem;
+	}
+
+	#status-status, #status-players, #status-mspt, #status-maintenance-datetime {
+		color: #999999;
+	}
+}
+
+.button_container {
+	height: 1.5rem;
+	width: 100%;
+	margin: 1.5rem 0 1.5rem 0;
+	padding: 0 0 0.5rem 0;
+	text-align: center;
+}
+
+.button {
+	height: 1.5rem;
+	line-height: 1.5rem;
+	width: 11.5rem;
+	margin: auto;
+	padding: 0;
+	font-size: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: var(--textColor);
+	display: inline-block;
+	align-self: center;
+	border-radius: 1rem;
+	border-width: 0.25rem;
+	border-style: solid;
+}
+
+.btn-slashl {
+	background-color: $slashLColor;
+	border-color: $slashLColor;
+	color: $black;
+	font-weight: 600;
+}
+
+.btn-minecraft {
+	background-color: var(--background);
+	border-color: $minecraftColor;
+}
+
+.btn-contact {
+	background-color: var(--background);
+	border-color: $contactColor;
+}
+
+.btn-underthepebble {
+	background-color: var(--background);
+	border-color: $underthepebbleColor;
+}
+
+.fineprint {
+	font-size: 0.5rem;
+	padding: 0;
+	margin: 0;
+}
+
+
+@media only screen and (max-width: 1450px) {
+	.bigscreen {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 750px) {
+	html{
+		font-size: 30px;
+	}
+
+	header {
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	footer {
+		padding: 0.5rem 0;
+		float: bottom;
+
+		p {
+			float: left;
+		}
+
+		a {
+			float: right;
+		}
+	}
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Expletus+Sans:700|Montserrat:400,600,700&display=swap');

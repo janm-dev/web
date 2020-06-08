@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+	<head>
+		<title>Contact - janm.ml</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+		<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="Description" content="janm.ml Contact page.">
+	</head>
+	<body>
+		<header>
+			<a href="/" class="logo">janm.ml</a>
+			<nav>
+				<a href="/l" class="nav bigscreen">SlashL</a>
+				<a href="#email" class="nav">Email</a>
+				<a href="#discord" class="nav">Discord</a>
+				<input type="checkbox" id="themeswitcher_checkbox" name="themeswitcher">
+				<label for="themeswitcher_checkbox">
+					<svg class="themeswitcher" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g class="a"><path d="M13.333,19.833a.836.836,0,0,0,.833.833H17.5a.836.836,0,0,0,.833-.833V19h-5ZM15.833,4A5.831,5.831,0,0,0,12.5,14.617V16.5a.836.836,0,0,0,.833.833h5a.836.836,0,0,0,.833-.833V14.617A5.831,5.831,0,0,0,15.833,4Zm2.379,9.25-.713.5v1.921H14.167V13.75l-.712-.5a4.17,4.17,0,1,1,4.758,0Z" transform="translate(-5.833 -2.333)"/></g></svg>
+				</label>
+				<script>let checkbox=document.querySelector("input[name=themeswitcher]");checkbox.addEventListener("change",function(){if(this.checked){document.documentElement.setAttribute("data-theme","light");}else{document.documentElement.setAttribute("data-theme","dark");}})</script>
+			</nav>
+		</header>
+		<main>
+			<h2>Contact.</h2>
+			<p>You can contact me via email or on Discord.</p>
+
+			<h1 id="email">Email</h1>
+			<p>Note: I'm still working on setting up these emails, so they don't work yet. Please use the Discord server below if you want to contact me for now.</p>
+			<p>You can contact me via email at <a href="mailto:contact@janm.ml" class="link">contact@janm.ml</a>, or if it's something to do with the website or something else run by me at <a href="mailto:contact@janm.ml" class="link">admin@janm.ml</a>.</p>
+			<p>I read most emails within about two weeks.</p>
+			<p>I recommend you use this method if you specifically want to contact me about something.</p>
+
+			<h1 id="discord">Discord</h1>
+			<p>You can also join the <a href="/discord" class="link">official janm.ml Discord server</a> and contact me there.</p>
+			<p>This method should give you a faster response than email, but not necessarily from me.</p>
+			<p>I recommend you use this method if you want to get a solution to a problem related to janm.ml quickly.</p>
+		</main>
+		<footer>
+			<a href="/contact" class="link fineprint">contact me</a>
+			<p class="fineprint">&copy; Jan Markiewicz 2019-2020</p>
+		</footer>
+	</body>
+</html>
