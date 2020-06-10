@@ -24,6 +24,6 @@ The API is not part of this repo, it's available [here](https://github.com/janmm
 - [Developer Contact](https://janm.ml/contact)
 - [Discord Server](https://janm.ml/discord)
 
-## License
+## Licence
 
 The janm.ml website is licensed under the [European Union Public License 1.2](http://ec.europa.eu/idabc/eupl.html) or later.
