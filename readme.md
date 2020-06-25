@@ -26,4 +26,4 @@ The API is not part of this repo, it's available [here](https://github.com/janmm
 
 ## Licence
 
-The janm.ml website is licensed under the [European Union Public License 1.2](http://ec.europa.eu/idabc/eupl.html) or later.
+The janm.ml website (with the exception of our legal notices, which are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)) is licensed under the [European Union Public License 1.2](http://ec.europa.eu/idabc/eupl.html) or later.
