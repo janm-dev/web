@@ -12,7 +12,7 @@ html {
 html[data-theme="light"] {
   --textColor: #000000;
   --dividerColor: #e1e1e1;
-  --background: #EEEEEE;
+  --background: #FFFFFF;
   color: #000000;
 }
 
