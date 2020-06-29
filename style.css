@@ -286,13 +286,6 @@ iframe {
   border-style: solid;
 }
 
-.btn-slashl {
-  background-color: #EEFF00;
-  border-color: #EEFF00;
-  color: #000000;
-  font-weight: 600;
-}
-
 .btn-minecraft {
   background-color: var(--background);
   border-color: #7DAB5D;

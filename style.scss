@@ -1,5 +1,4 @@
 $janmColor: #00E699;
-$slashLColor: #EEFF00;
 $contactColor: #D44F4F;
 $linkColor: #00AAFF;
 $minecraftColor: #7DAB5D;
@@ -297,13 +296,6 @@ iframe {
 	border-radius: 1rem;
 	border-width: 0.25rem;
 	border-style: solid;
-}
-
-.btn-slashl {
-	background-color: $slashLColor;
-	border-color: $slashLColor;
-	color: $black;
-	font-weight: 600;
 }
 
 .btn-minecraft {

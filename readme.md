@@ -8,7 +8,7 @@
 ![Version](https://img.shields.io/github/package-json/v/janmml/janmWeb)
 ![Website Status](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fjanm.ml)
 
-The [janm.ml website](https://janm.ml), including SlashL.
+The [janm.ml website](https://janm.ml).
 
 The API is not part of this repo, it's available [here](https://github.com/janmml/janmApi).
 
