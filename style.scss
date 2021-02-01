@@ -1,7 +1,6 @@
 $janmColor: #00E699;
 $contactColor: #D44F4F;
 $linkColor: #00AAFF;
-$minecraftColor: #7DAB5D;
 $devColor: #ff824d;
 $devProjectColor: #4DCAFF;
 $lightColor: #FFFFFF;
@@ -296,11 +295,6 @@ iframe {
 	border-radius: 1rem;
 	border-width: 0.25rem;
 	border-style: solid;
-}
-
-.btn-minecraft {
-	background-color: var(--background);
-	border-color: $minecraftColor;
 }
 
 .btn-contact {
