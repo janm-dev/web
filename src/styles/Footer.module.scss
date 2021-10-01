@@ -1,0 +1,89 @@
+.footer {
+	display: grid;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 6rem;
+	grid-template-areas: "copy github discord logo contact legal version";
+	grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 2fr;
+	text-align: center;
+}
+
+.logo {
+	grid-area: logo;
+	width: 2rem;
+	height: 2rem;
+	margin: auto;
+}
+
+.buildinfo {
+	grid-area: version;
+	display: none;
+}
+
+.buildlogo {
+	width: 2rem;
+	height: 2rem;
+	margin: 0 0.25rem;
+	vertical-align: middle;
+}
+
+.build {
+	height: 2rem;
+	vertical-align: middle;
+}
+
+.copy {
+	grid-area: copy;
+	margin: auto;
+}
+
+.github {
+	grid-area: github;
+	margin: auto;
+}
+
+.discord {
+	grid-area: discord;
+	margin: auto;
+}
+
+.contact {
+	grid-area: contact;
+	margin: auto;
+}
+
+.legal {
+	grid-area: legal;
+	margin: auto;
+}
+
+.version {
+	grid-area: version;
+	margin: auto;
+}
+
+@media (max-width: 800px) {
+	.footer {
+		height: 14rem;
+		display: grid;
+		grid-template-areas: "copy version" "github discord" "contact legal";
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(3, 1fr);
+		text-align: center;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.version {
+		display: none;
+	}
+
+	.buildinfo {
+		display: initial;
+		margin: auto;
+		height: 2rem;
+	}
+}

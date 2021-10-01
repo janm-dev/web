@@ -1,0 +1,17 @@
+.container {
+	display: grid;
+	margin: 2rem;
+	justify-content: center;
+	grid-template-rows: repeat(auto-fill, 18rem);
+	grid-template-columns: repeat(auto-fill, 36rem);
+	padding: 0 0 6rem 0;
+}
+
+@media (max-width: 800px) {
+	.container {
+		display: block;
+		width: 100%;
+		margin: auto;
+		padding: 0 0 14rem 0;
+	}
+}

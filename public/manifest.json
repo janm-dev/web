@@ -1,0 +1,43 @@
+{
+	"name": "janm.ml",
+	"scope": "/",
+	"start_url": "/",
+	"display": "standalone",
+	"theme_color": "#0b3fda",
+	"background_color": "#12161a",
+	"icons": [
+		{
+			"src": "/logo.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		},
+		{
+			"src": "/logo.webp",
+			"sizes": "512x512",
+			"type": "image/webp"
+		},
+		{
+			"src": "/logo.svg",
+			"sizes": "any",
+			"type": "image/svg+xml"
+		},
+		{
+			"src": "/logo_maskable.png",
+			"sizes": "any",
+			"purpose": "maskable",
+			"type": "image/png"
+		},
+		{
+			"src": "/logo_maskable.webp",
+			"sizes": "any",
+			"purpose": "maskable",
+			"type": "image/webp"
+		},
+		{
+			"src": "/logo_maskable.svg",
+			"sizes": "any",
+			"purpose": "maskable",
+			"type": "image/svg+xml"
+		}
+	]
+}

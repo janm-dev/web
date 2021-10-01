@@ -1,0 +1,170 @@
+:root {
+	font-size: 16px;
+
+	--fonts-text: Roboto, Segoe UI, Helvetica, sans-serif;
+	--weight-text: 400;
+	--fonts-bold: Roboto, Segoe UI, Helvetica, sans-serif;
+	--weight-bold: 700;
+	--fonts-italic: Roboto, Segoe UI, Helvetica, sans-serif;
+	--weight-italic: 400;
+	--fonts-mono: Roboto Mono, Consolas, Andale Mono, monospace;
+	--weight-mono: 400;
+	--fonts-heading: Inter, Roboto, Segoe UI, Helvetica, sans-serif;
+	--weight-heading: 600;
+
+	--animation-time-short: 100ms;
+	--animation-time-medium: 250ms;
+	--animation-time-long: 500ms;
+
+	--box-shadow-overlay-dark: 0 0 2rem 0 #00000055;
+	--box-shadow-overlay-light: 0 0 2rem 0.5rem #000000; // TODO
+
+	--text-shadow-primary: 0 0 0.6rem #333333bf;
+	--text-shadow-secondary: 0 0 0.6rem #66666680;
+	--box-shadow-primary: 0 0 2rem 0.5rem #333333bf;
+	--box-shadow-secondary: 0 0 2rem 0.5rem #66666680;
+
+	--color-on-dark: #ffffff;
+	--color-dark-gray-1: #12161a;
+	--color-dark-gray-2: #1b1f23;
+	--color-dark-gray-3: #25282c;
+	--color-dark-gray-4: #383b3f;
+	--color-dark-gray-5: #7d7f81;
+
+	--color-on-light: #000000;
+	--color-light-gray-1: #ffffff;
+	--color-light-gray-2: #f0f0f0;
+	--color-light-gray-3: #e0e0e0;
+	--color-light-gray-4: #c2c2c2;
+	--color-light-gray-5: #8c8c8c;
+
+	--color-dark-info: #3399ff;
+	--color-dark-success: #33ff33;
+	--color-dark-warning: #ff9933;
+	--color-dark-error: #d92626;
+
+	--color-light-info: #0073e5;
+	--color-light-success: #00e500;
+	--color-light-warning: #ff8000;
+	--color-light-error: #d92626;
+
+	--color-primary: #0b3fda;
+	--color-secondary: linear-gradient(90deg, #31ddff 0%, #00e699 100%);
+	--color-yellow: #d9ff1a;
+	--color-lilac: #9e73f4;
+
+	// Light theme
+	--color-fg: var(--color-on-light);
+	--color-bg: var(--color-light-gray-1);
+	--color-gray: var(--color-light-gray-5);
+	--color-overlay-1: var(--color-light-gray-2);
+	--color-overlay-2: var(--color-light-gray-3);
+	--color-overlay-3: var(--color-light-gray-4);
+	--color-info: var(--color-light-info);
+	--color-success: var(--color-light-success);
+	--color-warning: var(--color-light-warning);
+	--color-error: var(--color-light-error);
+	--box-shadow-overlay: var(--box-shadow-overlay-light);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		// Dark theme
+		--color-fg: var(--color-on-dark);
+		--color-bg: var(--color-dark-gray-1);
+		--color-gray: var(--color-dark-gray-5);
+		--color-overlay-1: var(--color-dark-gray-2);
+		--color-overlay-2: var(--color-dark-gray-3);
+		--color-overlay-3: var(--color-dark-gray-4);
+		--color-info: var(--color-dark-info);
+		--color-success: var(--color-dark-success);
+		--color-warning: var(--color-dark-warning);
+		--color-error: var(--color-dark-error);
+		--box-shadow-overlay: var(--box-shadow-overlay-dark);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	:root {
+		--animation-time-short: 0;
+		--animation-time-medium: 0;
+		--animation-time-long: 0;
+	}
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
+	min-width: 300px;
+	height: 100%;
+	color: var(--color-fg);
+	background-color: var(--color-bg);
+}
+
+p,
+li,
+span {
+	font-family: var(--fonts-text);
+	font-weight: var(--weight-text);
+}
+
+a {
+	color: var(--color-info);
+	font-family: var(--text-fonts);
+	font-weight: var(--text-weight);
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	transition: text-decoration-color var(--animation-time-medium);
+
+	&:hover {
+		text-decoration-color: var(--color-info);
+	}
+}
+
+b,
+strong {
+	font-family: var(--fonts-bold);
+	font-weight: var(--weight-bold);
+}
+
+i,
+em {
+	font-family: var(--fonts-italic);
+	font-weight: var(--weight-italic);
+	font-style: italic;
+}
+
+code {
+	padding: 0.05rem 0.25rem 0.1rem;
+	border-radius: 0.25rem;
+	font-family: var(--fonts-mono);
+	font-weight: var(--weight-mono);
+	background-color: var(--color-overlay-2);
+}
+
+h1 {
+	font-family: var(--fonts-heading);
+	font-weight: var(--weight-heading);
+	font-size: 1.75rem;
+}
+
+h2 {
+	font-family: var(--fonts-heading);
+	font-weight: var(--weight-heading);
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-family: var(--fonts-heading);
+	font-weight: var(--weight-heading);
+	font-size: 1.2rem;
+}
+
+#__next {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+}

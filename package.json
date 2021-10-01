@@ -1,0 +1,32 @@
+{
+	"name": "web",
+	"description": "The janm.ml website.",
+	"private": true,
+	"license": "AGPL-3.0-or-later",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"glob": "^7.2.0",
+		"gray-matter": "^4.0.3",
+		"next": "11.1.2",
+		"next-plugin-preval": "^1.2.1",
+		"react": "17.0.2",
+		"react-dom": "17.0.2",
+		"react-markdown": "^7.0.1",
+		"remark-gfm": "^2.0.0",
+		"remark-slug": "^7.0.0"
+	},
+	"devDependencies": {
+		"@svgr/webpack": "^5.5.0",
+		"@types/glob": "^7.1.4",
+		"@types/react": "17.0.21",
+		"eslint": "7.32.0",
+		"eslint-config-next": "11.1.2",
+		"sass": "^1.42.1",
+		"typescript": "4.4.3"
+	}
+}
