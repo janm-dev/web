@@ -14,8 +14,9 @@ The [janm.ml website](https://janm.ml).
 
 0. Make sure [Node.js](https://nodejs.org/) (`v14.17.0` or later), [npm](https://www.npmjs.com/), and [yarn](https://yarnpkg.com/) are installed. [Clone this repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
 1. In the root directory of this project, run `yarn install` to install all dependencies.
-2. Run `yarn start` to start a development webserver. This will automatically refresh the site when you change any file. This is recommended for development.
-3. Optionally, run `yarn build` and `npx serve -s build` to create and view an optimized production version. This is recommended for final tests before committing.
+2. Optionally, add a file named `.env` with the contents `NEXT_PUBLIC_NAME=local.janm.ml`.
+3. Run `yarn start` to start a development webserver. This will automatically refresh the site when you change any file. This is recommended for development.
+4. Optionally, run `yarn build` and `npx serve -s build` to create and view an optimized production version. This is recommended for final tests before committing.
 
 ## Design
 
