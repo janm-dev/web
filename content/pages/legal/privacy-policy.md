@@ -2,14 +2,14 @@
 title: Privacy Policy
 nav:
     - content: Source
-      href: https://github.com/janmml/web
+      href: https://github.com/janm-dev/web
     - content: Legal Info
       href: /legal
     - content: Contact
       href: /contact
 ---
 
-**Your privacy is critically important to us. At janm.ml, we have a few fundamental principles:**
+**Your privacy is critically important to us. At janm.dev, we have a few fundamental principles:**
 
 - We are thoughtful about the personal information we ask you to provide and the personal information that we collect about you through the operation of our services.
 - We store personal information for only as long as we have a reason to keep it.
@@ -19,16 +19,16 @@ Below is our Privacy Policy, which incorporates and clarifies these principles.
 
 ## Who We Are and What This Policy Covers
 
-Hi! We are the team behind janm.ml. This Privacy Policy applies to information that we collect about you when you use:
+Hi! We are the team behind janm.dev. This Privacy Policy applies to information that we collect about you when you use:
 
-- Our website (janm.ml);
+- Our website (janm.dev);
 - Our other products, services, and features;
 
 Throughout this Privacy Policy we'll refer to our websites, and other products and services collectively as "Services". Below we explain how we collect, use, and share information about you, along with the choices that you have with respect to that information.
 
 ## Creative Commons Sharealike License
 
-This is a modified version of Automattic's Privacy Policy. They've decided to make their Privacy Policy available under a [Creative Commons Sharealike](https://creativecommons.org/licenses/by-sa/4.0/) license. You can grab a copy of that Privacy Policy and other legal documents on their [GitHub](https://github.com/Automattic/legalmattic). Similarly this version of the policy is also available on [GitHub](https://github.com/janmml/web). If you want to use this Privacy Policy, we recommend modifying their version of it, though. Regardless, you're more than welcome to copy it, adapt it, and repurpose it for your own use. Just make sure to revise the language so that your policy reflects your actual practices. If you do use it, Automattic would appreciate a credit and link to Automattic somewhere on your site.
+This is a modified version of Automattic's Privacy Policy. They've decided to make their Privacy Policy available under a [Creative Commons Sharealike](https://creativecommons.org/licenses/by-sa/4.0/) license. You can grab a copy of that Privacy Policy and other legal documents on their [GitHub](https://github.com/Automattic/legalmattic). Similarly this version of the policy is also available on [GitHub](https://github.com/janm-dev/web). If you want to use this Privacy Policy, we recommend modifying their version of it, though. Regardless, you're more than welcome to copy it, adapt it, and repurpose it for your own use. Just make sure to revise the language so that your policy reflects your actual practices. If you do use it, Automattic would appreciate a credit and link to Automattic somewhere on your site.
 
 ## Information We Collect
 
@@ -174,6 +174,6 @@ If you have a question about this Privacy Policy, or you would like to contact u
 
 Although most changes are likely to be minor, we may change our Privacy Policy from time to time. We encourage visitors to frequently check this page for any changes to our Privacy Policy. If we make changes, we will notify you by revising the "last change" date below, and, in some cases, we may provide additional notice (like adding a statement to our homepage). Your further use of the Services after a change to our Privacy Policy will be subject to the updated policy.
 
-### Last change: 2021-10-01
+### Last change: 2021-10-02
 
 That's it! Thanks for reading.

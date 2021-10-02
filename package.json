@@ -1,6 +1,6 @@
 {
 	"name": "web",
-	"description": "The janm.ml website.",
+	"description": "The janm.dev website.",
 	"private": true,
 	"license": "AGPL-3.0-or-later",
 	"scripts": {

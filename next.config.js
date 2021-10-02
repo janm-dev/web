@@ -9,7 +9,7 @@ module.exports = withNextPluginPreval({
 	redirects: async () => [
 		{
 			source: "/github",
-			destination: "https://github.com/janmml",
+			destination: "https://github.com/janm-dev",
 			permanent: true
 		},
 		{

@@ -6,7 +6,7 @@ import styles from "../styles/Footer.module.scss"
 export const Footer = () => (
 	<footer className={styles.footer}>
 		<span className={styles.copy}>
-			© {buildData.year} janm.ml
+			© {buildData.year} janm.dev
 		</span>
 
 		<div className={styles.buildinfo}>

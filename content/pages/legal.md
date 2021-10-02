@@ -2,7 +2,7 @@
 title: Legal Info
 nav:
     - content: Source
-      href: https://github.com/janmml/web
+      href: https://github.com/janm-dev/web
     - content: Privacy Policy
       href: /legal/privacy-policy
     - content: Contact
@@ -15,7 +15,7 @@ Read the full privacy policy [on its own page](/legal/privacy-policy).
 
 ## Copyright
 
-Most of this website is the copyright of [janm.ml](https://github.com/janmml/web). See below for details.
+Most of this website is the copyright of [janm.dev](https://github.com/janm-dev/web). See below for details.
 
 ### Attribution
 
@@ -30,4 +30,4 @@ The privacy policy (`privacy-policy.md`) is licensed under the [Creative Commons
 
 The design for this project is licensed under the [Creative Commons Sharealike](https://creativecommons.org/licenses/by-sa/4.0/) (`CC BY-SA 4.0`) license.
 
-The rest of this project is licensed under GNU AGPLv3 or later (`AGPL-3.0-or-later`). You can find the full license text in [the LICENSE file](https://github.com/janmml/web/blob/prod/LICENSE).
+The rest of this project is licensed under GNU AGPLv3 or later (`AGPL-3.0-or-later`). You can find the full license text in [the LICENSE file](https://github.com/janm-dev/web/blob/prod/LICENSE).

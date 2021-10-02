@@ -1,20 +1,20 @@
 # Website
 
-[![Discord](https://img.shields.io/discord/677598544160358418)](https://janm.ml/discord)
-[![Dependency Info](https://img.shields.io/david/janmml/web)](https://github.com/janmml/web)
+[![Discord](https://img.shields.io/discord/677598544160358418)](https://janm.dev/discord)
+[![Dependency Info](https://img.shields.io/david/janm-dev/web)](https://github.com/janm-dev/web)
 
-The [janm.ml website](https://janm.ml).
+The [janm.dev website](https://janm.dev).
 
 ## Related projects
 
-- [**qna**](https://qna.janm.ml) - Cross-screen QnA question queue.
-- [**ws-relay**](https://github.com/janmml/ws-relay) - Websocket relay server.
+- [**qna**](https://qna.janm.dev) - Cross-screen QnA question queue.
+- [**ws-relay**](https://github.com/janm-dev/ws-relay) - Websocket relay server.
 
 ## Running locally
 
 0. Make sure [Node.js](https://nodejs.org/) (`v14.17.0` or later), [npm](https://www.npmjs.com/), and [yarn](https://yarnpkg.com/) are installed. [Clone this repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
 1. In the root directory of this project, run `yarn install` to install all dependencies.
-2. Optionally, add a file named `.env` with the contents `NEXT_PUBLIC_NAME=local.janm.ml`.
+2. Optionally, add a file named `.env` with the contents `NEXT_PUBLIC_NAME=local.janm.dev`.
 3. Run `yarn start` to start a development webserver. This will automatically refresh the site when you change any file. This is recommended for development.
 4. Optionally, run `yarn build` and `npx serve -s build` to create and view an optimized production version. This is recommended for final tests before committing.
 
