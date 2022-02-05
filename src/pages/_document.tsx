@@ -11,10 +11,6 @@ class MyDocument extends Document {
 					<meta name="theme-color" content="#0b3fda" />
 					<meta name="description" content="" />
 					<link rel="manifest" href="/manifest.json" />
-					<link
-						href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
-						rel="stylesheet"
-					/>
 				</Head>
 				<body>
 					<Main />
