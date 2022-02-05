@@ -27,9 +27,9 @@ Not all pages, assets, and components are fully represented in the design files.
 ## Attribution
 
 - This project uses a modified version of [Automattic's Privacy Policy](https://github.com/Automattic/legalmattic), licensed under the [Creative Commons Sharealike](https://creativecommons.org/licenses/by-sa/4.0/) license.
-- This project uses the [Inter](https://github.com/rsms/inter/) font, licensed under the [Open Font License](https://scripts.sil.org/OFL).
-- This project uses the [Roboto](https://github.com/google/roboto/) font, licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0).
-- This project uses the [Roboto Mono](https://github.com/google/roboto/) font, licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0).
+- This project uses the [Inter](https://github.com/rsms/inter/) font, licensed under the [Open Font License](https://scripts.sil.org/OFL). For more info, check the `public/fonts/inter.LICENSE` file.
+- This project uses the [Roboto](https://github.com/google/roboto/) font, licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0). For more info, check the `public/fonts/roboto.LICENSE` file.
+- This project uses the [Roboto Mono](https://github.com/google/roboto/) font, licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0). For more info, check the `public/fonts/roboto-mono.LICENSE` file.
 
 ## License
 
