@@ -1,7 +1,6 @@
 # Website
 
 [![Discord](https://img.shields.io/discord/677598544160358418)](https://janm.dev/discord)
-[![Dependency Info](https://img.shields.io/david/janm-dev/web)](https://github.com/janm-dev/web)
 
 The [janm.dev website](https://janm.dev).
 
