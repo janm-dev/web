@@ -13,8 +13,8 @@ module.exports = withNextPluginPreval({
 			permanent: true
 		},
 		{
-			source: "/discord",
-			destination: "https://discord.gg/CEw4Nna",
+			source: "/source",
+			destination: "https://github.com/janm-dev/web",
 			permanent: true
 		}
 	],

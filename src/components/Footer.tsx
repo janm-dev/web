@@ -22,8 +22,8 @@ export const Footer = () => (
 			<a className={styles.github}>GitHub</a>
 		</Link>
 
-		<Link href="/discord">
-			<a className={styles.discord}>Discord</a>
+		<Link href="/source">
+			<a className={styles.source}>source</a>
 		</Link>
 
 		<Link href="/">

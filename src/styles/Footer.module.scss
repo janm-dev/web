@@ -4,7 +4,7 @@
 	bottom: 0;
 	width: 100%;
 	height: 6rem;
-	grid-template-areas: "copy github discord logo contact legal version";
+	grid-template-areas: "copy github source logo contact legal version";
 	grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 2fr;
 	text-align: center;
 }
@@ -43,8 +43,8 @@
 	margin: auto;
 }
 
-.discord {
-	grid-area: discord;
+.source {
+	grid-area: source;
 	margin: auto;
 }
 
@@ -67,7 +67,7 @@
 	.footer {
 		height: 14rem;
 		display: grid;
-		grid-template-areas: "copy version" "github discord" "contact legal";
+		grid-template-areas: "copy version" "github source" "contact legal";
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(3, 1fr);
 		text-align: center;
