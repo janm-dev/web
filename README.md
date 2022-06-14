@@ -1,7 +1,5 @@
 # Website
 
-[![Discord](https://img.shields.io/discord/677598544160358418)](https://janm.dev/discord)
-
 The [janm.dev website](https://janm.dev).
 
 ## Related projects

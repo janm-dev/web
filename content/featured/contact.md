@@ -4,4 +4,4 @@ link: /contact
 icon: /logo_secondary.svg
 ---
 
-Contact us via [email](mailto:contact@janm.dev) or on [Discord](/discord). More details on the [contact page](/contact).
+Contact us via [email](mailto:contact@janm.dev). More details on the [contact page](/contact).
